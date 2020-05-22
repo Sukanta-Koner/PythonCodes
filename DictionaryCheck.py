@@ -32,8 +32,12 @@ def dictionary_check(dict1, dict2):
         print("Both are same")
 
 
+def run():
+    dict1 = {'numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
+    dict2 = {'numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
 
-dict1 = {'numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
-dict2 = {'numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
+    dictionary_check(dict1, dict2)
 
-dictionary_check(dict1, dict2)
+
+if __name__ == '__main__':
+    run()

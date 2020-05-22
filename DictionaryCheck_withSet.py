@@ -7,13 +7,13 @@ def dictionary_symmetry_check(dict1, dict2):
     else:
         return False
 
+def run():
+    # dict1 = {'numbers' :{1: 'one', 2:"two", '3':'three'},'x':'y', 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
+    # dict2 = {'x':'y','numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
+    d1 = {'a' : 1, 'b' : {'a' :  1, 'b' :  {'a' :  'a',  'b' : 2}}, 'c' : 3 }
+    d2 = {'a' : 1, 'b' : {'a' :  1, 'b' :  {'a' :  'b',  'b' : 2}}, 'c' : 3 }
 
+    print(dictionary_symmetry_check(d1, d2))
 
-
-
-# dict1 = {'numbers' :{1: 'one', 2:"two", '3':'three'},'x':'y', 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
-# dict2 = {'x':'y','numbers' :{1: 'one', 2:"two", '3':'three'}, 'alpha' : {'a': 'apple', 'b': 'ball','c':'cat'}, 'storm' : 'sonic'}
-d1 = {'a' : 1, 'b' : {'a' :  1, 'b' :  {'a' :  'a',  'b' : 2}}, 'c' : 3 }
-d2 = {'a' : 1, 'b' : {'a' :  1, 'b' :  {'a' :  'b',  'b' : 2}}, 'c' : 3 }
-
-print(dictionary_symmetry_check(d1, d2))
+if __name__ == '__main__':
+    run()
