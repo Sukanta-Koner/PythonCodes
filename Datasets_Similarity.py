@@ -1,4 +1,4 @@
-class Dict_Similarity:
+class Datasets_Similarity:
     def __init__(self, ds1, ds2):
         self.ds1 = ds1
         self.ds2 = ds2
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     ds1 = input('Enter 1st Dataset: ')
     ds2 = input('Enter 2nd Dataset: ')
 
-    ds = Dict_Similarity(ds1, ds2)
+    ds = Datasets_Similarity(ds1, ds2)
     if ds.ds_sim():
         print('\nYour Data Sets are Same')
     else:
